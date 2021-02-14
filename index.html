@@ -9,8 +9,9 @@
       <link rel="stylesheet" type="text/css" href="./assets/style.css" />
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+      <link rel="icon" href="https://i.pinimg.com/originals/a1/af/df/a1afdf74b97e350ab0b33335f0276e82.jpg">
     </head>
-
+<!-- linked in fonts from google -->
     <body>
       <header>
         <h1>zoe chalk</h1>
@@ -31,33 +32,42 @@
 
 
       <main>
-        <section id= "aboutme">
-          <h2>about me</h2>
+
+          <section id= "aboutme">
+              <h2>about me</h2>
           <section id= "mypic"> </section>
-          <p>I am a full stack developer with an interest in front end and UI/UX design. My goals when working a project are to capture an aesthetic and develop a seamless user experience. <br> <br> I am presently located in Fayetteville, NC. I am still in a full stack bootcamp through UNC Chapel Hill and expect to graduate in July 2021.</p>
-        </section>
-        <section id= "mywork">
-          <h2>my work</h2>
-          <p> I have currenly only completed two projects so far, the 3rd is a placeholder. Take a look:</p>
-          <section id= "myprojects">
-              <a href= "https://zchalk.github.io/Porfolio/">
-                <div class= "large_project_slot"></div>
-              </a>
-              <a href= "https://github.com/zchalk/Zoes-Horiseon-Code-Refactor">
-                <div class= "small_projects_slot"></div>
-              </a>
-              <a href= "https://google.com">
-                <div class= "small_projects_slot"></div>
-              </a>
+              <p>I am a full stack developer with an interest in front end and UI/UX design. My goals when working a project are to capture an aesthetic and develop a seamless user experience. <br> <br> I am presently located in Fayetteville, NC. I am still in a full stack bootcamp through UNC Chapel Hill and expect to graduate in July 2021.</p>
           </section>
-        </section>
-        <section id= "contactme">
-          <h2>contact me</h2>
-          <form action="mailto:zoechalk1@gmail.com" method="post" enctype="text/plain">
-            <input type="submit" value="i promise i'll check my email" id= "button">
-            </form>
-            
-        </section>
+           <!-- this section is kind of wonky, it took me a lot of time to get it to function properly. the divs titled big and small exist to be flex items. the internal divs title large and small project exist to make the entire div a clickable link -->
+          <section id= "mywork">
+              <h2>my work</h2>
+              <p> I have currenly only completed two projects so far, the 3rd is a placeholder. Take a look:</p>
+              <div class= "big">
+                  <h3>portfolio</h3>
+                  <a href= "https://zchalk.github.io/Porfolio/"> 
+                      <div class= "large_project_slot"></div>
+                  </a>
+              </div>
+              <div class= "small">
+                <h3>code refactor</h3>
+                  <a href= "https://zchalk.github.io/Zoes-Horiseon-Code-Refactor/">
+                      <div class= "small_projects_slot"></div>
+                  </a>
+              </div>
+              <div class= "small">
+                <h3>google filler</h3>
+                  <a href= "https://google.com">
+                      <div class= "small_projects_slot"></div>
+                  </a>
+              </div>
+          </section>
+        <!-- this section contains a simple html email form -->
+          <section id= "contactme">
+              <h2>contact me</h2>
+              <form action="mailto:zoechalk1@gmail.com" method="post" enctype="text/plain">
+                  <input type="submit" value="i promise i'll check my email" id= "button">
+              </form>  
+          </section>
       </main>
 
       <footer>

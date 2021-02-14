@@ -21,8 +21,9 @@ body {
 }
 
 main{
-    margin-top: 50%;
+    margin-top: 10%;
 }
+/* slightly unconventional header for stylistic purpose as well to show off clickable scroll links in nav */
 header {
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@ nav ul {
     text-decoration: none;
     color:black;
  }
-
+/* my entire main is a flex box container to best align my content down the center of the page */
  main {
      display: flex;
      flex-direction: column;
@@ -72,12 +73,12 @@ nav ul {
  }
 
  main section {
-     /* flex-direction: column; */
      max-width: 33.3%;
      margin-left: 33.3%;
-     /* display: flex; */
-     /* justify-content: space-evenly; */
-     margin-bottom: 5%;
+     margin-top: 10%;
+     margin-bottom: 10%;
+     padding-top: 15%;
+     padding-bottom: 15%;
  }
  #mypic {
      border-style: solid;
@@ -86,15 +87,12 @@ nav ul {
      width: 33.3%;
      border-color: var(--accent_color);
  }
-
+/* just a filler pic, still want to work on this box */
  #mypic:hover {
      content: url(images/me_irl_in_shades.jpg);
  }
 
  section h2 {
-     /* display: flex; */
-     /* flex-direction: column; */
-     /* justify-content: center; */
      min-height: 200%;
      min-width: 33.3%;
      text-align: center;
@@ -102,27 +100,28 @@ nav ul {
      padding-bottom: 2%;
  }
  section p {
-     /* display: flex; */
      text-align: justify;
      margin-bottom: 5%;
-     /* justify-content: space-between; */
+ }
+ section h3 {
+     text-align: center;
  }
 
-
- #myprojects {
+/* once again it took me a LONG time to get my flex box to work, originally had display flex on too many items */
+ #mywork {
      display: flex;
      flex-wrap: wrap;
-     justify-content: flex-start;
+     justify-content: space-evenly;
      width: 33.3%;
-     margin-left: 0;
  }
 .large_project_slot {
     border-style: solid;
     border-color: var(--accent_color);
     min-height: 20em;
-    width: 38em;
+    width: 40em;
+    margin-bottom: 5%;
     
-    
+/* I did try to condence these hover elements by assigning a secondary class to my divs, it was unsuccessful so it is still seperated out */
 }
 .large_project_slot:hover {
     background-image: url(https://cdn130.picsart.com/269868497006201.png?type=webp&to=min&r=640);
@@ -136,9 +135,7 @@ nav ul {
     border-style: solid;
     border-color: var(--accent_color);
     min-height: 10em;
-    width: 10em;
-    margin: 5%;
-    /* padding: 20%; */
+    width: 18em;
 
 }
 
@@ -148,6 +145,9 @@ nav ul {
     background-position: center;
     background-repeat: no-repeat;
 }
+#contactme {
+    padding-bottom: 20%;
+}
  form {
      display: flex;
      flex-direction: column;
@@ -156,6 +156,7 @@ nav ul {
  }
 #button {
     background-color: var(--accent_color) ;
+    cursor: pointer;
 }
 
  footer {
@@ -163,6 +164,7 @@ nav ul {
      
  }
 
+ /* adjustments for tablet and  phone */
  @media only screen and (max-width: 768px) {
     section p {
         font-size: 75%; 
