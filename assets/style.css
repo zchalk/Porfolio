@@ -65,13 +65,18 @@ nav ul {
     color:black;
  }
 
+ main {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ }
 
  main section {
-     flex-direction: column;
+     /* flex-direction: column; */
      max-width: 33.3%;
      margin-left: 33.3%;
-     display: flex;
-     justify-content: space-evenly;
+     /* display: flex; */
+     /* justify-content: space-evenly; */
      margin-bottom: 5%;
  }
  #mypic {
@@ -87,9 +92,9 @@ nav ul {
  }
 
  section h2 {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
+     /* display: flex; */
+     /* flex-direction: column; */
+     /* justify-content: center; */
      min-height: 200%;
      min-width: 33.3%;
      text-align: center;
@@ -97,9 +102,9 @@ nav ul {
      padding-bottom: 2%;
  }
  section p {
-     display: flex;
+     /* display: flex; */
      text-align: justify;
-     justify-content: space-between;
+     /* justify-content: space-between; */
  }
 
 
@@ -113,7 +118,6 @@ nav ul {
 .large_project_slot {
     border-style: solid;
     border-color: var(--accent_color);
-    flex-basis: auto;
     min-height: 20em;
     width: 100%;
     margin: 5%;
