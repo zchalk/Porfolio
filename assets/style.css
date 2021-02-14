@@ -172,8 +172,19 @@ nav ul {
     section h2 {
         font-size: large;
     }
+    section h3 {
+        font-size: small;
+    }
     #button {
         font-size: 75%;
+    }
+    .large_project_slot {
+        min-height: 10em;
+        width: 20em;
+    }
+    .small_projects_slot {
+        min-height: 5em;
+        width: 9em;
     }
  }
  
@@ -185,5 +196,13 @@ nav ul {
     }
     #button {
         font-size:38%;
+    }
+    .large_project_slot {
+        min-height: 5em;
+        width: 10em;
+    }
+    .small_projects_slot {
+        min-height: 2.5em;
+        width: 10em;
     }
  }
