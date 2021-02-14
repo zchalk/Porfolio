@@ -207,3 +207,15 @@ nav ul {
         width: 10em;
     }
  }
+ @media only screen and (max-width: 400px) {
+    section p {
+        font-size: 50%; 
+    }
+    section h2 {
+        font-size: medium;
+    }
+    section h3 {
+        font-size: xx-small;
+    }
+    #button {
+        font-size: 5px;
