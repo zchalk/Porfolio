@@ -176,7 +176,7 @@ nav ul {
         font-size: small;
     }
     #button {
-        font-size: 75%;
+        font-size: 55%;
     }
     .large_project_slot {
         min-height: 10em;
@@ -194,6 +194,7 @@ nav ul {
         flex-direction: column;
         text-align: center;
     }
+/*this button appears to have the proper font size in browsers device choser, but on phone it is not working*/
     #button {
         font-size:25%;
     }
