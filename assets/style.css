@@ -78,16 +78,22 @@ nav ul {
      padding-top: 15%;
      padding-bottom: 15%;
  }
+ aside {
+     position:fixed;
+     bottom: 0;
+     left: 0;
+     height: 30vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+ }
  #mypic {
      border-style: solid;
      padding: 5%;
      min-height: 10%;
      width: 33.3%;
      border-color: var(--accent_color);
- }
-/* just a filler pic, still want to work on this box */
- #mypic:hover {
-     content: url(images/me_irl_in_shades.jpg);
+    content: url(images/me_irl_in_shades.jpg);
  }
 
  section h2 {
@@ -103,7 +109,7 @@ nav ul {
  }
  section h3 {
      text-align: center;
-     display: none;
+     /* display: none; */
  }
  a {
      text-decoration: none;
@@ -126,20 +132,25 @@ nav ul {
     min-height: 20em;
     width: 40em;
     margin-bottom: 5%;
-    
+    background-image: url(https://cdn130.picsart.com/269868497006201.png?type=webp&to=min&r=640);
 /* I did try to condence these hover elements by assigning a secondary class to my divs, it was unsuccessful so it is still seperated out. i chose this filler image because the screen captures were not aesthetically pleasing at all */
 }
 .large_project_slot:hover {
-    background-image: url(https://cdn130.picsart.com/269868497006201.png?type=webp&to=min&r=640);
+    background-image: url(images/endless.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .large_project_slot:hover h3{
-    display: block;
+    display: none;
 }
 
+#small_project_container {
+    display:flex;
+    justify-content: space-between;
+
+}
 .small_projects_slot {
     display: flex;
     justify-content: center;
@@ -148,22 +159,28 @@ nav ul {
     border-color: var(--accent_color);
     min-height: 10em;
     width: 18em;
-
+    background-image: url(https://cdn130.picsart.com/269868497006201.png?type=webp&to=min&r=640);
 }
 
-.small_projects_slot:hover {
-    background-image: url(https://cdn130.picsart.com/269868497006201.png?type=webp&to=min&r=640);
+#password:hover {
+    background-image: url(images/passwordGenerator.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#daily:hover {
+    background-image: url(images/dailyplanner.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .small_projects_slot:hover h3{
-    display: block;
+    display: none;
 }
 
 #contactme {
-    padding-bottom: 20%;
+    padding-bottom: 18%;
 }
  form {
      display: flex;
@@ -175,10 +192,15 @@ nav ul {
     background-color: var(--accent_color) ;
     cursor: pointer;
 }
-
  footer {
-     text-align: center;
-     
+     display: flex;
+     justify-content: space-around;
+     align-items: baseline;
+     text-align: center;  
+ }
+
+i {
+    font-size: 3rem;
  }
 
  /* adjustments for tablet and  phone */

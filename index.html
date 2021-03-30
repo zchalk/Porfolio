@@ -6,6 +6,7 @@
       <title>zoe chalk</title>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="./assets/reset.css">
       <link rel="stylesheet" type="text/css" href="./assets/style.css" />
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,34 +34,41 @@
 
 
       <main>
+        <aside id="side-ar-nav">
+          <a href= "#aboutme">about me</a>
+          <a href= "#mywork">my work</a>
+          <a href= "#contactme">contact me</a>
+        </aside>
 
           <section id= "aboutme">
               <h2>about me</h2>
           <section id= "mypic"> </section>
-              <p>I am a full stack developer with an interest in front end and UI/UX design. My goals when working a project are to capture an aesthetic and develop a seamless user experience. <br> <br> I am presently located in Fayetteville, NC. I am still in a full stack bootcamp through UNC Chapel Hill and expect to graduate in July 2021.</p>
+              <p>I am a full stack developer with an interest in front end and UI/UX design. My goals when working a project are to capture an aesthetic and develop a seamless user experience. I also have a passion for developing effective communication with both my team and individuals.<br> <br> I am presently located in Fayetteville, NC. I am still in a full stack bootcamp through UNC Chapel Hill and expect to graduate in July 2021. My husband and I are due to move to Tacoma, WA early 2022.</p>
           </section>
            <!-- this section is kind of wonky, it took me a lot of time to get it to function properly. the divs titled big and small exist to be flex items. the internal divs title large and small project exist to make the entire div a clickable link -->
           <section id= "mywork">
               <h2>my work</h2>
-              <p> I have currenly only completed two projects so far, the 3rd is a placeholder. Take a look:</p>
-                  <a href= "https://zchalk.github.io/Porfolio/">
+              <p> These are a few of the projects I have completed thus far, the most prominent being a collaborative project. Take a look:</p>
+                  <a href= "https://github.com/zchalk/sk8erboyz">
                     <div class= "big">
                       <div class= "large_project_slot">
-                        <h3>portfolio</h3>
+                        <h3>project 1 - endless pawsibilities</h3>
                       </div> </div>
                   </a>
-                  <a href= "https://zchalk.github.io/Zoes-Horiseon-Code-Refactor/">
+                  <div id= "small_project_container">
+                  <a href= "https://github.com/zchalk/dailyPlanner">
                   <div class= "small">
-                      <div class= "small_projects_slot">
-                        <h3>code refactor</h3>
+                      <div class= "small_projects_slot" id = "daily">
+                        <h3>daily planner</h3>
                       </div> </div>
                   </a>
-                  <a href= "https://google.com">
+                  <a href= "https://github.com/zchalk/Password_Generator">
                     <div class= "small">
-                      <div class= "small_projects_slot">
-                        <h3>google filler</h3>
+                      <div class= "small_projects_slot" id="password">
+                        <h3>password generator</h3>
                       </div></div>                 
                   </a>
+                  </div>
           </section>
         <!-- this section contains a simple html email form -->
           <section id= "contactme">
@@ -72,7 +80,10 @@
       </main>
 
       <footer>
-        <h4>zoe chalk</h4>
+   
+        <a class = "links" href = "https://github.com/zchalk"><i class="fab fa-github-square"></i></a>
+             <h4>zoe chalk</h4>
+        <a class = "links" href = "https://www.linkedin.com/in/zchalk/"><i class="fab fa-linkedin" ></i></a>
       </footer>
 
       
