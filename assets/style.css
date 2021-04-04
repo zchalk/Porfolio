@@ -202,6 +202,9 @@ nav ul {
 i {
     font-size: 3rem;
  }
+ aside {
+     margin-left: 2rem;
+ }
 
  /* adjustments for tablet and  phone */
  @media only screen and (max-width: 768px) {
