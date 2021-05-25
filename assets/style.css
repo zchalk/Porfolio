@@ -136,7 +136,7 @@ nav ul {
 /* I did try to condence these hover elements by assigning a secondary class to my divs, it was unsuccessful so it is still seperated out. i chose this filler image because the screen captures were not aesthetically pleasing at all */
 }
 .large_project_slot:hover {
-    background-image: url(images/endless.png);
+    background-image: url(images/writersblock.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
